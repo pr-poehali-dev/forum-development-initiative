@@ -48,7 +48,7 @@ interface Category {
 }
 
 export default function Index() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [topics, setTopics] = useState<Topic[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
@@ -205,7 +205,7 @@ export default function Index() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <Icon name="MessagesSquare" size={32} className="text-primary-foreground" />
-              <h1 className="text-2xl font-bold">Форум сообщества</h1>
+              <h1 className="text-2xl font-bold">Gangs: The Eternal War for the World</h1>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-2">
