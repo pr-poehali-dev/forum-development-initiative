@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Get topics list",
+      "method": "GET",
+      "path": "/?action=topics",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "topics": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get categories",
+      "method": "GET",
+      "path": "/?action=categories",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "categories": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
